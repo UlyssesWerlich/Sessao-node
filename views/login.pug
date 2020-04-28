@@ -1,0 +1,12 @@
+html
+   head
+      title Login
+   body
+      h4 Login
+      form(action = "/login" method = "POST")
+         input(name = "id" type = "text"  placeholder = "User ID")
+         input(name = "password" type = "password"  placeholder = "Password")
+         button(type = "Submit") Log in
+      a( href="/signup" ) Não possui cadastro?
+      if(message)
+         p( style="color:Red" ) #{message}

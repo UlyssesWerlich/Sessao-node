@@ -1,0 +1,11 @@
+html
+   head
+      title Signup
+   body
+      h4 Cadastrar
+      form(action = "/signup" method = "POST")
+         input(name = "id" type = "text" required placeholder = "User ID")
+         input(name = "password" type = "password" required placeholder = "Password")
+         input(type = "submit" value='Sign me up!') 
+      if(message)
+         p( style="color:Red" ) #{message}
